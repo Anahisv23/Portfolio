@@ -1,0 +1,324 @@
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #f2b680;
+    --orange: #bf6f41;
+    --darkblue: darkblue;
+    --darkred: darkred;
+    --magenta: #e310cb;
+    --lightgreen: #80A03B;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --lightblue: #9EADB4;
+    --sans: "Bree Serif", serif;
+  }
+  /* border box model: https://css-tricks.com/box-sizing/ */
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+    /* background-color: var(--orange); */
+    background-color: #638622;
+    /* background-color: #CA612C ; */
+    color: var(--white);
+    font-size: var(--font-size);
+  }
+  
+  /* we have space of 1 m here bcs our p tag has 1 m */
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
+  
+  a {
+    color: #f2d2b6;;
+  }
+
+  /* background color divs */
+  .gradient {
+    background: radial-gradient(circle, rgba(241,191,171,1) 0%, rgba(244,113,60,1) 100%);
+    height: 2px
+  }
+
+  .section-gray {
+    background-color: #7A7B7E;
+  }
+
+  .section-green{
+    background-color: var(--lightgreen);
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  a:hover {
+    color: var(--plum);
+    text-decoration: none;
+  }
+  
+  /* intro styles */
+  
+  #intro {
+    /* t r b l */
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto; 
+    /* ^ added space from the right? */
+  }
+  
+  #intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  #intro .name {
+    font-family: var(--sans);
+    font-weight: bold;
+  }
+  
+  .name span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: #f2d2b6;
+    display: block;
+  }
+  
+  #intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+  }
+  
+  /* contact styling */
+  
+  #contact {
+    width: 400px;
+    /* width for everything within id of contact */
+    text-align: center;
+    margin: 0 auto 2rem;
+    /* ^ allows us to align items on a webpage, works hand in hand with width
+      dont put margin on top and bottom 
+      */
+    padding: 3rem 0;
+  }
+
+  
+  /* get the last p child in the contact section */
+  #contact p:last-child {
+    margin-top: 3rem;
+  }
+  
+  /* nav styling */
+  
+  nav {
+    font-family: var(--sans);
+    font-size: 80%;
+    padding: 1 rem;
+  }
+  
+  /* read css selectors from right to left so we wanted a tag within h1 within nav tag */
+  nav h1 a {
+    font-family: var(--sans);
+  }
+  
+  /* list-style-none takes off bullet points */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* horizontal  */
+  }
+
+  /* nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+   */
+  /* li parent is the ul and ul used flexbox so we can use flex properties here such as flex basis  */
+  /* flex basis allowed us to add name in own line */
+  /*  li needs to occupy whatever space is available in this case 100%*/
+  
+  /*attribute selectors looks for attributes in html tag so the attribute with class that starts with fa apply style to that */
+  
+  nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  nav [class*="fa-"]{
+    font-size: 150%;
+    color: #F1BFAB;
+  }
+  
+  nav h1 [class*="fa-"]{
+    font-size: 100%;
+    color: #F1BFAB;
+  }
+  
+  nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav a:hover, nav [class*="fa-"]:hover {
+    color: var(--plum);
+    text-decoration: none;
+  }
+  
+  /* button styling */
+  
+  .button {
+    background-color: orange;
+    color: var(--white);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: var(--sans);
+    /* text-decoration takes off underline */
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    color: var(--white);
+    background-color: var(--plum);
+  }
+  
+  /* footer styling */
+  
+  footer {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-size: 2rem;
+  }
+
+
+  /* project section styling */
+
+  #projects {
+    padding: 4rem 1rem;
+  }
+
+  #projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+  }
+
+  #projects h3 {
+    color: #f2d2b6;
+  }
+
+  #projects h4 {
+    font-size: 1rem;
+    font-family: var(--sans);
+    margin: 0;
+  }
+
+  .gray-box {
+    background-color: #7A7B7E;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  #projects ul {
+    list-style-type: none;
+    /* turn off padding and margin on ul */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    row-gap: 1rem;
+    font-size: 1rem;
+  }
+
+  #projects img {
+    margin: 2rem 0 4rem 0;
+    border-left: 1px solid white;
+    border-top:  1px solid white;
+    border-bottom:  1px solid white;
+    border-right:  1px solid white;
+    border-radius: 25px;
+    padding: 1rem;
+  }
+
+  /* making responsive design */
+
+  /* if page is 500 px wide or wider this is what we want to happen */
+  @media (min-width: 500px) {
+    article {
+        display: grid;
+        /* two columns both 1fr (fraction) of the screen */
+        /* repeat columns  */
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
+    }
+    #projects {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    /* overlapping items */
+    /* what does 1/6 mean line 1 starts at the left line 6 is between img and text */
+    #projects img {
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+    .text {
+        /* overlap line 5 but grid by default will add overlap things
+        to a new row to fix this */
+        grid-column: 5/11;
+        grid-row: 1/2;
+        /* we basically put text and img in the same row */
+        order: 2;
+        /* order put text on the right */
+        text-align: right;
+    }
+  }
+  
+  @media (min-width: 850px){
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  /*  take up space that flexbox decides */
+    nav li:first-child {
+      flex-basis: auto;
+      text-align: left;
+      margin-right: auto;
+    }
+    nav li {
+     padding: 2rem;
+    }
+  }
+
