@@ -325,3 +325,8 @@
   .nounderline {
     text-decoration: none;
   }
+
+
+  body li {
+    padding: 0.5rem;
+  }
