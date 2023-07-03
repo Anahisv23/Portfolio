@@ -26,11 +26,9 @@
     padding: 0;
     margin: 0;
     font-family: var(--sans);
-    /* background-color: var(--orange); */
-    background-color: #638622;
-    /* background-color: #CA612C ; */
     color: var(--white);
     font-size: var(--font-size);
+    background-color: #DFEBF2;
   }
   
   /* we have space of 1 m here bcs our p tag has 1 m */
@@ -46,16 +44,16 @@
 
   /* background color divs */
   .gradient {
-    background: radial-gradient(circle, rgba(241,191,171,1) 0%, rgba(244,113,60,1) 100%);
+    background: radial-gradient(circle, rgb(146, 133, 127) 0%, rgb(124, 116, 113) 100%);
     height: 2px
   }
 
   .section-gray {
-    background-color: #80A03B;
+    background-color: #2A593E;
   }
 
   .section-green{
-    background-color: var(--lightgreen);
+    background-color: #2A593E;
   }
 
   img {
@@ -71,16 +69,17 @@
   
   #intro {
     /* t r b l */
-    padding: 4rem 1rem 10rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto; 
-    /* ^ added space from the right? */
+    padding: 4rem 2rem 10rem 7rem;
+    /* max-width: 1200px; */
+    margin: 0rem auto; 
+    background-color: #2A593E;
   }
   
   #intro p {
     font-size: 1rem;
     line-height: 1.5;
   }
+
   
   #intro .name {
     font-family: var(--sans);
@@ -106,6 +105,8 @@
     /* width for everything within id of contact */
     text-align: center;
     margin: 0 auto 2rem;
+    background-color: #DFEBF2;
+    color: #2A593E;
     /* ^ allows us to align items on a webpage, works hand in hand with width
       dont put margin on top and bottom 
       */
@@ -124,6 +125,7 @@
     font-family: var(--sans);
     font-size: 80%;
     padding: 1 rem;
+    background-color: #DFEBF2;
   }
   
   /* read css selectors from right to left so we wanted a tag within h1 within nav tag */
@@ -168,29 +170,29 @@
   
   nav [class*="fa-"]{
     font-size: 150%;
-    color: #F1BFAB;
+    color: #2A593E;
   }
   
   nav h1 [class*="fa-"]{
     font-size: 100%;
-    color: #F1BFAB;
+    color: #2A593E;
   }
   
   nav a {
-    color: var(--white);
+    color: #2A593E;
     text-decoration: none;
     display: block;
   }
   
   nav a:hover, nav [class*="fa-"]:hover {
-    color: var(--plum);
+    color: green;
     text-decoration: none;
   }
   
   /* button styling */
   
   .button {
-    background-color: orange;
+    background-color: darkgoldenrod;
     color: var(--white);
     padding: 0.5rem;
     border-radius: 5px;
@@ -209,6 +211,8 @@
   footer {
     text-align: center;
     padding: 4rem 0;
+    background-color: #2A593E;
+    color: white;
   }
   
   footer ul {
@@ -226,21 +230,24 @@
 
   #projects {
     padding: 4rem 1rem;
+    background-color: #DFEBF2;
   }
 
   #projects h2 {
     font-size: 2.5rem;
     margin-bottom: calc(2.5rem * 1.5);
+    color: #2A593E
   }
 
   #projects h3 {
-    color: #f2d2b6;
+    color: darkgoldenrod;
   }
 
   #projects h4 {
     font-size: 1rem;
     font-family: var(--sans);
     margin: 0;
+    color: #2A593E;
   }
 
   .gray-box {
@@ -261,6 +268,7 @@
     justify-content: flex-end;
     row-gap: 1rem;
     font-size: 1rem;
+    color: gray;
   }
 
   #projects img {
@@ -324,6 +332,7 @@
 
   .nounderline {
     text-decoration: none;
+    color: darkgoldenrod
   }
 
 
@@ -352,6 +361,10 @@
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
+}
+
+#about {
+  background-color: #2A593E;
 }
 
 .about-img {
