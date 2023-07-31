@@ -343,6 +343,7 @@
   .list-items{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 0.5rem;
     list-style-type: none;
@@ -351,7 +352,12 @@
   .me {
     width: 300px;
     height: 400px;
-    border-radius: 15px;
+    border-left: 1px solid white;
+    border-top:  1px solid white;
+    border-bottom:  1px solid white;
+    border-right:  1px solid white;
+    border-radius: 25px; 
+    padding: 0.5rem;
   }
 
 /* about me */
@@ -375,4 +381,10 @@
   
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.tech-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
