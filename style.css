@@ -88,7 +88,7 @@
   
   .name span {
     font-family: var(--sans);
-    font-size: 4rem;
+    font-size: 3rem;
     color: #f2d2b6;
     display: block;
   }
@@ -240,7 +240,7 @@
   }
 
   #projects h3 {
-    color: darkgoldenrod;
+    color: #2A593E;
   }
 
   #projects h4 {
@@ -331,8 +331,8 @@
   }
 
   .nounderline {
-    text-decoration: none;
-    color: darkgoldenrod
+    color: darkgoldenrod;
+    font-size: 2rem;
   }
 
 
